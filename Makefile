@@ -17,11 +17,11 @@ define Package/luci-app-pppoeup
   TITLE:=pppoeup
 endef
 
-define Package/freifunk-common/description
+define Package/luci-app-pppoeup/description
   PPPoE Up.
 endef
 
-define Package/luci-mod-freifunk/conffiles
+define Package/luci-app-pppoeup/conffiles
 /etc/config/pppoeup
 endef
 
@@ -35,7 +35,7 @@ endef
 define Build/Compile
 endef
 
-define Package/freifunk-common/install
+define Package/luci-app-pppoeup/install
 	$(CP) ./files/* $(1)/
 endef
 
